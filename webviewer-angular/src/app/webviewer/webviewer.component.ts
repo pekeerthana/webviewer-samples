@@ -52,7 +52,6 @@ export class WebViewerComponent implements AfterViewInit {
 
     try {
       const { documentViewer } = this.instance.Core;
-      console.log(this.instance.Core);
       const spreadsheetEditorManager = documentViewer.getSpreadsheetEditorManager();
       console.log(spreadsheetEditorManager);
 
