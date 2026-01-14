@@ -1,9 +1,0 @@
-# Misc
-.DS_Store
-node_modules
-
-# WebViewer
-server/xfdf
-client/lib/core
-client/lib/ui
-client/lib/webviewer.min.js
