@@ -1,21 +1,12 @@
-<div class="webviewer-container">
-  <div class="upload-container">
-    <button (click)="triggerFileInput()" class="upload-button">📁 Upload Document</button>
-    <input
-      #fileInput
-      type="file"
-      accept=".pdf,.doc,.docx,.xlsx,.xls,.pptx,.ppt,.csv"
-      (change)="onFileSelected($event)"
-      style="display: none;"
-    />
-  </div>
-
-  <!-- Gallery Picker Component for sample files -->
-  <app-gallery-picker
-    [files]="sampleFiles"
-    (fileSelected)="onGalleryFileSelected($event)"
-  ></app-gallery-picker>
-
-  <!-- WebViewer Container -->
-  <div #viewer class="viewer"></div>
+<div class="upload-container">
+  <button (click)="triggerFileInput()" class="upload-button">Upload Document</button>
+  <input
+    #fileInput
+    type="file"
+    accept=".pdf,.doc,.docx,.xlsx,.xls,.pptx,.ppt"
+    (change)="onFileSelected($event)"
+    style="display: none;"
+  />
 </div>
+
+<div #viewer class="viewer" style="height: 100%; width: 100%"></div>
